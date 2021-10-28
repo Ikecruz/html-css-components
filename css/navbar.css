@@ -10,32 +10,6 @@ html{
     color: white;
 }
 
-.d-flex{
-    display: flex;
-}
-
-.justify-content-center{
-    justify-content: center;
-}
-
-.align-items-center{
-    align-items: center;
-}
-
-.center-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.text-end{
-    text-align: end;
-}
-
-.text-center{
-    align-items: center;
-}
-
 div{
     width: 100%;
 }
@@ -43,6 +17,8 @@ div{
 .nav{
     width: 100%;
 }
+
+/* Navbar */
 
 .nav .navbar-contain{
     width: 80%;
@@ -103,6 +79,8 @@ div{
         display: flex;
     }
 }
+
+/* Navbar End */
 
 /* Sidebar */
 .sidebar-contain{
