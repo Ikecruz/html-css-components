@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>PlayMate</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="navbar-contain">
+            <div class="logo-contain">
+                <p>PlayMate</p>
+            </div>
+            <div class="nav-link-contain">
+                <ul>
+                    <li>Home</li>
+                    <li>Scoreboard</li>
+                    <li>Shop</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="auth-contain">
+                <p><i class="fas fa-shopping-cart"></i></p>
+                <p><i class="fas fa-user"></i></p>
+                <button class="nav-toggler" id="nav-toggler"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+        <div class="sidebar-contain" id="sidebar-contain">
+            <div class="sidebar" id="sidebar">
+                <!-- Cancel button -->
+                <button class="close-sidebar" id="sidebar-toggler"><i class="fas fa-times"></i></button>
+
+                <div class="nav-link-contain">
+                    <ul>
+                        <li>Home</li>
+                        <li>Scoreboard</li>
+                        <li>Shop</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <script>
+        let navToggle = document.querySelector("#nav-toggler");
+        let sidebarToggle = document.querySelector("#sidebar-toggler");
+        let sidebar = document.querySelector("#sidebar");
+        let sidebarContain = document.querySelector("#sidebar-contain");
+
+        navToggle.addEventListener("click", () => {
+            sidebarContain.classList.add("show")
+            sidebar.classList.add("show")
+        })
+
+        sidebarContain.addEventListener("click", () => {
+            sidebarContain.classList.remove("show")
+            sidebar.classList.remove("show")
+        })
+
+        sidebarToggle.addEventListener("click", () => {
+            sidebarContain.classList.remove("show")
+            sidebar.classList.remove("show")
+        })
+    </script>
+</body>
+</html>
